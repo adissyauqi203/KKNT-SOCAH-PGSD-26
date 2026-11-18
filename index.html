@@ -40,25 +40,35 @@
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0 flex items-center space-x-3">
                     <img src="logo kknt.png" alt="Logo KKNT Socah" onerror="this.onerror=null; this.src='https://placehold.co/100x100/1a4a98/white?text=Logo';" class="h-10 w-10 rounded-full bg-white p-0.5 object-cover">
-                    <h1 class="font-bold text-xl tracking-tight">KKNT Desa Socah 2026</h1>
+                    <h1 class="font-bold text-lg tracking-tight">KKNT Desa Socah 2026</h1>
                 </div>
                 <div class="hidden sm:block">
                     <ul class="flex space-x-8">
                         <li><a href="#beranda" class="hover:text-brand-fuji transition-colors text-sm font-medium">Beranda</a></li>
                         <li><a href="#kegiatan" class="hover:text-brand-fuji transition-colors text-sm font-medium">Kegiatan</a></li>
                         <li><a href="#dokumentasi" class="hover:text-brand-fuji transition-colors text-sm font-medium">Dokumentasi</a></li>
+                        <li><a href="#berita" class="hover:text-brand-fuji transition-colors text-sm font-medium">Berita</a></li>
                         <li><a href="#tim" class="hover:text-brand-fuji transition-colors text-sm font-medium">Anggota Tim</a></li>
                         <li><a href="#kontak" class="hover:text-brand-fuji transition-colors text-sm font-medium">Kontak</a></li>
                     </ul>
                 </div>
-                <!-- Mobile menu button (visual only for this demo) -->
                 <div class="sm:hidden flex items-center">
-                    <button class="text-white hover:text-brand-fuji focus:outline-none">
+                    <button id="mobile-menu-toggle" type="button" class="text-white hover:text-brand-fuji focus:outline-none" aria-label="Buka menu navigasi" aria-controls="mobile-menu" aria-expanded="false">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                         </svg>
                     </button>
                 </div>
+            </div>
+            <div id="mobile-menu" class="hidden sm:hidden border-t border-white/10 pb-3">
+                <ul class="flex flex-col gap-1 pt-3">
+                    <li><a href="#beranda" class="block rounded-lg px-3 py-2 hover:bg-white/10">Beranda</a></li>
+                    <li><a href="#kegiatan" class="block rounded-lg px-3 py-2 hover:bg-white/10">Kegiatan</a></li>
+                    <li><a href="#dokumentasi" class="block rounded-lg px-3 py-2 hover:bg-white/10">Dokumentasi</a></li>
+                    <li><a href="#berita" class="block rounded-lg px-3 py-2 hover:bg-white/10">Berita &amp; Artikel</a></li>
+                    <li><a href="#tim" class="block rounded-lg px-3 py-2 hover:bg-white/10">Anggota Tim</a></li>
+                    <li><a href="#kontak" class="block rounded-lg px-3 py-2 hover:bg-white/10">Kontak</a></li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -80,9 +90,8 @@
             <span class="px-5 py-1.5 bg-gradient-to-r from-brand-fuji to-green-500 rounded-full text-xs font-bold tracking-wider uppercase mb-5 shadow-lg text-white border border-green-400/30">
                 Pendidikan Guru Sekolah Dasar 
             </span>
-            <h2 class="text-3
-            xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight drop-shadow-md">
-                 Universitas Trunodjoyo Madura
+            <h2 class="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight drop-shadow-md">
+                 Universitas Trunojoyo Madura
             </h2>
             <p class="text-lg md:text-xl font-light max-w-2xl text-blue-50 italic backdrop-blur-sm bg-black/10 py-2 px-6 rounded-full border border-white/10">
                 "Membangun Bersama, Berdaya Selamanya"
@@ -101,37 +110,104 @@
     <section id="kegiatan" class="py-20 px-4 max-w-6xl mx-auto">
         <div class="text-center mb-16">
             <h3 class="text-3xl font-bold text-brand-dark inline-block relative">
-                Jenis Kegiatan
+                Daftar Kegiatan
                 <div class="absolute w-1/2 h-1 bg-brand-fuji bottom-0 left-1/4 -mb-2 rounded-full"></div>
             </h3>
+            <p class="mt-6 text-gray-500">Rangkaian kegiatan lapangan KKNT Desa Socah periode Agustus-November 2026.</p>
         </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Card 1 -->
-            <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl border border-gray-100 hover:border-brand-fuji hover:-translate-y-2 transition-all duration-300 group">
-                <div class="w-12 h-12 bg-brand-fuji_light rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-fuji transition-colors">
-                    <svg class="w-6 h-6 text-brand-fuji group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                </div>
-                <h4 class="text-xl font-bold text-brand-dark mb-3">Program Pendidikan</h4>
-                <p class="text-gray-600 leading-relaxed">Meningkatkan literasi dan numerasi siswa sekolah dasar di Desa Socah melalui metode pembelajaran inovatif.</p>
+
+        <details id="panel-kegiatan" class="group">
+            <summary class="mx-auto max-w-sm list-none cursor-pointer flex items-center justify-center gap-3 px-6 py-4 rounded-full bg-brand-fuji text-white font-bold shadow-lg hover:bg-green-600 transition-all [&::-webkit-details-marker]:hidden">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span>Lihat Daftar Kegiatan</span>
+            </summary>
+        <div class="flex flex-wrap justify-center gap-2 mt-8 mb-8" aria-label="Filter bulan kegiatan">
+            <button type="button" data-kegiatan-filter="semua" class="kegiatan-filter px-4 py-2 rounded-full bg-brand-fuji text-white text-sm font-semibold shadow-sm">Semua</button>
+            <button type="button" data-kegiatan-filter="agustus" class="kegiatan-filter px-4 py-2 rounded-full bg-white text-brand-dark border border-gray-200 text-sm font-semibold hover:border-brand-fuji">Agustus</button>
+            <button type="button" data-kegiatan-filter="september" class="kegiatan-filter px-4 py-2 rounded-full bg-white text-brand-dark border border-gray-200 text-sm font-semibold hover:border-brand-fuji">September</button>
+            <button type="button" data-kegiatan-filter="oktober" class="kegiatan-filter px-4 py-2 rounded-full bg-white text-brand-dark border border-gray-200 text-sm font-semibold hover:border-brand-fuji">Oktober</button>
+            <button type="button" data-kegiatan-filter="november" class="kegiatan-filter px-4 py-2 rounded-full bg-white text-brand-dark border border-gray-200 text-sm font-semibold hover:border-brand-fuji">November</button>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead class="bg-brand-dark text-white">
+                        <tr>
+                            <th class="px-5 py-4 text-sm font-semibold w-16">No.</th>
+                            <th class="px-5 py-4 text-sm font-semibold w-44">Tanggal</th>
+                            <th class="px-5 py-4 text-sm font-semibold">Keterangan</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr data-kegiatan-bulan="agustus" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">1</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">31 Agustus 2026</td><td class="px-5 py-4 text-gray-700">Pembukaan KKN-T &amp; riset Desa Socah secara tertutup, dihadiri perangkat desa, dosen pembimbing lapangan, dan perwakilan keamanan Desa Socah.</td></tr>
+                        <tr data-kegiatan-bulan="september" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">2</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">7 September 2026</td><td class="px-5 py-4 text-gray-700">Koordinasi lanjutan kepada kepala desa dan kepala sekolah terkait program kerja.</td></tr>
+                        <tr data-kegiatan-bulan="september" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">3</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">7 September 2026</td><td class="px-5 py-4 text-gray-700">Peninjauan lokasi buku desa bagian 1: tambak udang, sumber air Jokotole Kauman, dan dock perahu Kauman.</td></tr>
+                        <tr data-kegiatan-bulan="september" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">4</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">8 September 2026</td><td class="px-5 py-4 text-gray-700">Pertemuan perdana pelatihan musik notasi angka di SDN Socah 4 untuk 14 siswa: menghafal Do, Re, Mi dan instrumen awal.</td></tr>
+                        <tr data-kegiatan-bulan="september" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">5</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">10 September 2026</td><td class="px-5 py-4 text-gray-700">Pertemuan perdana pelatihan musik notasi angka di SDN Socah 2 untuk 20 siswa: menghafal Do, Re, Mi dan instrumen awal.</td></tr>
+                        <tr data-kegiatan-bulan="september" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">6</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">12 September 2026</td><td class="px-5 py-4 text-gray-700">Senam bersama dan mengajar kelas 4 Bahasa Madura atas permintaan guru.</td></tr>
+                        <tr data-kegiatan-bulan="september" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">7</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">14 September 2026</td><td class="px-5 py-4 text-gray-700">Mengajar PAUD Mawar dengan tema mengenal nama buah berdasarkan abjad serta membuat kolase buah.</td></tr>
+                        <tr data-kegiatan-bulan="september" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">8</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">15 September 2026</td><td class="px-5 py-4 text-gray-700">Pertemuan kedua pelatihan musik notasi angka di SDN Socah 4.</td></tr>
+                        <tr data-kegiatan-bulan="september" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">9</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">16 September 2026</td><td class="px-5 py-4 text-gray-700">Mengajar PAUD Mawar tentang mengenal warna, doa sehari-hari, dan macam-macam pekerjaan.</td></tr>
+                        <tr data-kegiatan-bulan="september" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">10</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">17 September 2026</td><td class="px-5 py-4 text-gray-700">Pertemuan kedua pelatihan seni musik notasi angka di SDN Socah 2 melalui lagu Ibu Kartini dan Tandu Majheng.</td></tr>
+                        <tr data-kegiatan-bulan="september" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">11</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">21 September 2026</td><td class="px-5 py-4 text-gray-700">Mengajar PAUD Mawar tentang mengenal warna, doa sehari-hari, macam-macam sayur, pembiasaan, dan mewarnai.</td></tr>
+                        <tr data-kegiatan-bulan="september" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">12</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">22 September 2026</td><td class="px-5 py-4 text-gray-700">Pertemuan ketiga pelatihan notasi angka berbasis Bahasa Madura di SDN Socah 4 melalui lagu Ibu Kita Kartini dan Solasol.</td></tr>
+                        <tr data-kegiatan-bulan="september" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">13</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">23 September 2026</td><td class="px-5 py-4 text-gray-700">Mengajar PAUD Mawar tentang mengenal buah-buahan, pembiasaan, dan mewarnai buah.</td></tr>
+                        <tr data-kegiatan-bulan="september" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">14</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">24 September 2026</td><td class="px-5 py-4 text-gray-700">Pertemuan ketiga pelatihan notasi angka berbasis Bahasa Madura di SDN Socah 2 melalui lagu Ibu Kita Kartini dan Solasol.</td></tr>
+                        <tr data-kegiatan-bulan="september" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">15</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">28 September 2026</td><td class="px-5 py-4 text-gray-700">Rapat persiapan sosialisasi di sekolah.</td></tr>
+                        <tr data-kegiatan-bulan="september" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">16</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">29 September 2026</td><td class="px-5 py-4 text-gray-700">Mengajar PAUD Mawar tentang tumbuhan lingkungan sekitar dan pembiasaan.</td></tr>
+                        <tr data-kegiatan-bulan="oktober" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">17</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">1 Oktober 2026</td><td class="px-5 py-4 text-gray-700">Rapat penyampaian progress KKNT dan riset bersama dosen pembimbing lapangan di RKBB.</td></tr>
+                        <tr data-kegiatan-bulan="oktober" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">18</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">1 Oktober 2026</td><td class="px-5 py-4 text-gray-700">Rapat evaluasi bulanan.</td></tr>
+                        <tr data-kegiatan-bulan="oktober" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">19</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">2 Oktober 2026</td><td class="px-5 py-4 text-gray-700">Mengajar seni rupa berupa kegiatan menggambar di SDN Socah 4.</td></tr>
+                        <tr data-kegiatan-bulan="oktober" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">20</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">5-10 Oktober 2026</td><td class="px-5 py-4 text-gray-700">Kegiatan sekolah ditunda karena pelaksanaan Ujian Tengah Semester (UTS).</td></tr>
+                        <tr data-kegiatan-bulan="oktober" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">21</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">5 Oktober 2026</td><td class="px-5 py-4 text-gray-700">Pendataan tempat-tempat di Desa Socah untuk penyusunan buku desa.</td></tr>
+                        <tr data-kegiatan-bulan="oktober" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">22</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">6 Oktober 2026</td><td class="px-5 py-4 text-gray-700">Kerja kelompok penyusunan buku desa mencapai progress 35% dan evaluasi program kerja lanjutan.</td></tr>
+                        <tr data-kegiatan-bulan="oktober" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">23</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">7 Oktober 2026</td><td class="px-5 py-4 text-gray-700">Kerja kelompok internal menyusun lagu berbasis notasi angka Bahasa Madura.</td></tr>
+                        <tr data-kegiatan-bulan="oktober" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">24</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">8 Oktober 2026</td><td class="px-5 py-4 text-gray-700">Penyusunan laporan kemajuan kegiatan.</td></tr>
+                        <tr data-kegiatan-bulan="oktober" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">25</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">13 Oktober 2026</td><td class="px-5 py-4 text-gray-700">Pelatihan siswa SDN Socah 4 menggunakan angklung untuk lagu Ibu Kita Kartini.</td></tr>
+                        <tr data-kegiatan-bulan="oktober" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">26</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">15 Oktober 2026</td><td class="px-5 py-4 text-gray-700">Pelatihan siswa SDN Socah 2 menggunakan angklung untuk lagu Ibu Kita Kartini.</td></tr>
+                        <tr data-kegiatan-bulan="oktober" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">27</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">27 Oktober 2026</td><td class="px-5 py-4 text-gray-700">Menghafal lagu Sewel Socah di SDN Socah 4.</td></tr>
+                        <tr data-kegiatan-bulan="oktober" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">28</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">28 Oktober 2026</td><td class="px-5 py-4 text-gray-700">Kerja bakti di Desa Socah dan penyerahan media tanam kangkung.</td></tr>
+                        <tr data-kegiatan-bulan="oktober" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">29</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">29 Oktober 2026</td><td class="px-5 py-4 text-gray-700">Menghafal lagu Sewel Socah di SDN Socah 2.</td></tr>
+                        <tr data-kegiatan-bulan="november" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">30</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">3 November 2026</td><td class="px-5 py-4 text-gray-700">Menghafal lagu budaya Madura Sewel Socah di SDN Socah 2.</td></tr>
+                        <tr data-kegiatan-bulan="november" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">31</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">4 November 2026</td><td class="px-5 py-4 text-gray-700">Mengajar PAUD Mawar tentang profesi dokter dan tugasnya.</td></tr>
+                        <tr data-kegiatan-bulan="november" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">32</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">9 November 2026</td><td class="px-5 py-4 text-gray-700">Kegiatan perpisahan dengan anak PAUD.</td></tr>
+                        <tr data-kegiatan-bulan="november" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">33</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">10 November 2026</td><td class="px-5 py-4 text-gray-700">Menyetorkan lagu Sewel Socah dan lagu budaya Madura, serta membuat es krim di SDN Socah 4.</td></tr>
+                        <tr data-kegiatan-bulan="november" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">34</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">12 November 2026</td><td class="px-5 py-4 text-gray-700">Menyetorkan lagu Sewel Socah dan lagu budaya Madura di SDN Socah 2.</td></tr>
+                        <tr data-kegiatan-bulan="november" class="hover:bg-green-50/40"><td class="px-5 py-4 text-gray-500">35</td><td class="px-5 py-4 font-semibold text-brand-dark whitespace-nowrap">17 November 2026</td><td class="px-5 py-4 text-gray-700">Pembuatan kerajinan berbasis clay.</td></tr>
+                    </tbody>
+                </table>
             </div>
-            
-            <!-- Card 2 -->
-            <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl border border-gray-100 hover:border-brand-fuji hover:-translate-y-2 transition-all duration-300 group">
-                <div class="w-12 h-12 bg-brand-fuji_light rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-fuji transition-colors">
-                    <svg class="w-6 h-6 text-brand-fuji group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
-                </div>
-                <h4 class="text-xl font-bold text-brand-dark mb-3">Pemberdayaan Ekonomi</h4>
-                <p class="text-gray-600 leading-relaxed">Mendampingi UMKM setempat dalam strategi pemasaran dan pengemasan produk agar lebih bernilai jual.</p>
-            </div> 
-            
-            <!-- Card 3 -->
-            <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl border border-gray-100 hover:border-brand-fuji hover:-translate-y-2 transition-all duration-300 group">
-                <div class="w-12 h-12 bg-brand-fuji_light rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-fuji transition-colors">
-                    <svg class="w-6 h-6 text-brand-fuji group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
-                </div>
-                <h4 class="text-xl font-bold text-brand-dark mb-3">Kesehatan & Lingkungan</h4>
-                <p class="text-gray-600 leading-relaxed">Sosialisasi pola hidup bersih dan sehat (PHBS) serta pengadaan tempat pembuangan sampah yang terstruktur.</p>
+        </div>
+        </details>
+    </section>
+
+    <!-- Bagian Berita dan Artikel -->
+    <section id="berita" class="py-20 px-4 bg-white border-y border-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-brand-dark inline-block relative">
+                    Berita &amp; Artikel
+                    <div class="absolute w-1/2 h-1 bg-brand-fuji bottom-0 left-1/4 -mb-2 rounded-full"></div>
+                </h3>
+                <p class="mt-6 text-gray-500">Cerita kegiatan dan pembelajaran KKNT bersama masyarakat Desa Socah.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <article class="bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm">
+                    <p class="text-sm font-semibold text-brand-fuji mb-2">3-12 November 2026 · Pendidikan &amp; Budaya</p>
+                    <h4 class="text-xl font-bold text-brand-dark mb-3">Mengenalkan Lagu Daerah Madura di Sekolah</h4>
+                    <p class="text-gray-600 leading-relaxed">Siswa SDN Socah 2 dan SDN Socah 4 berlatih lagu Sewel Socah dan lagu budaya Madura melalui kegiatan seni musik KKNT.</p>
+                </article>
+                <article class="bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm">
+                    <p class="text-sm font-semibold text-brand-fuji mb-2">September-November 2026 · Pendidikan</p>
+                    <h4 class="text-xl font-bold text-brand-dark mb-3">Belajar Kreatif Bersama PAUD Mawar</h4>
+                    <p class="text-gray-600 leading-relaxed">Kegiatan belajar mencakup pengenalan buah, warna, tumbuhan, pembiasaan sehari-hari, hingga mengenal profesi dokter.</p>
+                </article>
+                <article class="bg-gray-50 rounded-2xl p-6 border border-gray-100 shadow-sm">
+                    <p class="text-sm font-semibold text-brand-fuji mb-2">28 Oktober 2026 · Lingkungan</p>
+                    <h4 class="text-xl font-bold text-brand-dark mb-3">Kerja Bakti dan Media Tanam Kangkung</h4>
+                    <p class="text-gray-600 leading-relaxed">Tim KKNT bersama masyarakat melaksanakan kerja bakti di Desa Socah dan menyerahkan media tanam kangkung.</p>
+                </article>
             </div>
         </div>
     </section>
@@ -146,39 +222,20 @@
             <p class="text-gray-500 max-w-2xl mx-auto">Tempat kami merekam jejak langkah, senyum warga, dan setiap momen pengabdian selama di Desa Socah.</p>
         </div>
 
-        <div class="relative rounded-3xl overflow-hidden bg-brand-dark shadow-2xl border border-gray-100 min-h-[450px] flex items-center justify-center p-8 group">
-            <!-- Background Image Pattern / Grid for Photo Slots (Estetika visual slot foto) -->
-            <div class="absolute inset-0 opacity-10 grid grid-cols-2 md:grid-cols-4 gap-4 p-4 pointer-events-none">
-                <div class="bg-white rounded-xl transform -rotate-2 scale-105"></div>
-                <div class="bg-white rounded-xl transform rotate-3"></div>
-                <div class="bg-white rounded-xl transform -rotate-1"></div>
-                <div class="bg-white rounded-xl transform rotate-2 mt-4"></div>
-                <div class="bg-white rounded-xl transform rotate-1 mt-4"></div>
-                <div class="bg-white rounded-xl transform -rotate-3"></div>
-                <div class="bg-white rounded-xl transform rotate-2 scale-110"></div>
-                <div class="bg-white rounded-xl transform -rotate-1 mt-2"></div>
-            </div>
+        <div class="relative max-w-5xl mx-auto rounded-3xl overflow-hidden bg-brand-dark shadow-2xl border border-gray-100">
+            <div id="dokumentasi-slider" class="relative">
+                <img id="dokumentasi-foto" src="image1.jpeg" alt="Dokumentasi KKNT" class="w-full h-[280px] sm:h-[420px] md:h-[520px] object-cover cursor-zoom-in" onclick="openImageZoom(this.src, this.alt)">
 
-            <!-- Glassmorphism Coming Soon Box (Kartu utama translusen) -->
-            <div class="relative z-10 bg-white/10 backdrop-blur-lg px-8 py-12 md:px-16 md:py-16 rounded-3xl border border-white/20 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] text-center transform transition-all duration-500 hover:scale-105 hover:bg-white/20 max-w-lg w-full">
-                <!-- Ikon Kamera dengan Animasi Pulse -->
-                <div class="mx-auto flex items-center justify-center w-24 h-24 bg-gradient-to-br from-brand-fuji to-green-600 rounded-full shadow-2xl mb-8 text-white relative">
-                    <div class="absolute inset-0 rounded-full bg-brand-fuji animate-ping opacity-75"></div>
-                    <svg class="w-12 h-12 relative z-10 drop-shadow-md" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                </div>
-                
-                <h4 class="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight drop-shadow-lg">
-                    Coming <span class="text-brand-fuji">Soon</span>
-                </h4>
-                <p class="text-gray-200 font-medium text-lg md:text-xl leading-relaxed mb-8">
-                    Dokumentasi keseruan kegiatan akan segera hadir seiring berjalannya program kerja kami!
-                </p>
-                
-                <!-- Titik Animasi Loading (Loading Dots) -->
-                <div class="flex justify-center space-x-3">
-                    <div class="w-3.5 h-3.5 bg-white rounded-full animate-bounce"></div>
-                    <div class="w-3.5 h-3.5 bg-white rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
-                    <div class="w-3.5 h-3.5 bg-white rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                <button type="button" id="dokumentasi-prev" aria-label="Foto sebelumnya" class="absolute left-3 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-black/50 text-white flex items-center justify-center hover:bg-brand-fuji transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 18l-6-6 6-6"></path></svg>
+                </button>
+                <button type="button" id="dokumentasi-next" aria-label="Foto berikutnya" class="absolute right-3 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-black/50 text-white flex items-center justify-center hover:bg-brand-fuji transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 18l6-6-6-6"></path></svg>
+                </button>
+
+                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/85 to-transparent px-5 py-5 sm:px-8 sm:py-7 text-white">
+                    <p id="dokumentasi-keterangan" class="font-semibold text-sm sm:text-base leading-relaxed"></p>
+                    <p id="dokumentasi-indikator" class="mt-2 text-xs text-gray-200"></p>
                 </div>
             </div>
         </div>
@@ -213,7 +270,7 @@
             <!-- Pembina -->
             <li onclick="bukaProfil('pembina')" class="bg-white px-6 py-4 rounded-xl shadow-sm border border-gray-100 flex flex-col sm:flex-row sm:items-center justify-between hover:border-yellow-400 transition-colors cursor-pointer hover:shadow-md group">
                 <div class="flex items-center mb-2 sm:mb-0">
-                    <img src="10.jpg" alt="Foto Pembina" onerror="this.onerror=null; this.src='https://placehold.co/400x400/eab308/ffffff?text=FN';" class="w-10 h-10 rounded-full object-cover mr-4 group-hover:scale-110 transition-transform shadow-sm object-top">
+                    <img src="bu harini .png" alt="Foto Pembina" onerror="this.onerror=null; this.src='https://placehold.co/400x400/eab308/ffffff?text=FN';" class="w-10 h-10 rounded-full object-cover mr-4 group-hover:scale-110 transition-transform shadow-sm object-top">
                     <span class="nama-anggota text-gray-800 font-semibold text-lg group-hover:text-yellow-600 transition-colors">FIRDAUSI NURHARINI, S.PD., M.PD.</span>
                 </div>
                 <span class="peran-anggota px-3 py-1 bg-yellow-50 text-yellow-700 text-sm font-medium rounded-full border border-yellow-200">Dosen Pembimbing</span>
@@ -222,7 +279,7 @@
             <!-- Ketua -->
             <li onclick="bukaProfil('adis')" class="bg-white px-6 py-4 rounded-xl shadow-sm border border-gray-100 flex flex-col sm:flex-row sm:items-center justify-between hover:border-brand-fuji transition-colors cursor-pointer hover:shadow-md group">
                 <div class="flex items-center mb-2 sm:mb-0">
-                    <img src="10.png" alt="Foto M. Adis Syauqi N" onerror="this.onerror=null; this.src='https://placehold.co/400x400/1a4a98/ffffff?text=AS';" class="w-10 h-10 rounded-full object-cover mr-4 group-hover:scale-110 transition-transform shadow-sm">
+                    <img src="adis.png" alt="Foto M. Adis Syauqi N" onerror="this.onerror=null; this.src='https://placehold.co/400x400/1a4a98/ffffff?text=AS';" class="w-10 h-10 rounded-full object-cover mr-4 group-hover:scale-110 transition-transform shadow-sm">
                     <span class="nama-anggota text-gray-800 font-semibold text-lg group-hover:text-brand-fuji transition-colors">M. ADIS SYAUQI N</span>
                 </div>
                 <span class="peran-anggota px-3 py-1 bg-green-50 text-brand-fuji text-sm font-medium rounded-full border border-green-200">Ketua</span>
@@ -231,7 +288,7 @@
             <!-- Wakil Ketua -->
             <li onclick="bukaProfil('aufi')" class="bg-white px-6 py-4 rounded-xl shadow-sm border border-gray-100 flex flex-col sm:flex-row sm:items-center justify-between hover:border-brand-light transition-colors cursor-pointer hover:shadow-md group">
                 <div class="flex items-center mb-2 sm:mb-0">
-                    <img src="4.png" alt="Foto Syaikhan Aufi A." onerror="this.onerror=null; this.src='https://placehold.co/400x400/4f46e5/ffffff?text=SA';" class="w-10 h-10 rounded-full object-cover mr-4 group-hover:scale-110 transition-transform shadow-sm">
+                    <img src="aufi.png" alt="Foto Syaikhan Aufi A." onerror="this.onerror=null; this.src='https://placehold.co/400x400/4f46e5/ffffff?text=SA';" class="w-10 h-10 rounded-full object-cover mr-4 group-hover:scale-110 transition-transform shadow-sm">
                     <span class="nama-anggota text-gray-800 font-semibold text-lg group-hover:text-indigo-600 transition-colors">SYAIKHAN AUFI A.</span>
                 </div>
                 <span class="peran-anggota px-3 py-1 bg-indigo-50 text-indigo-600 text-sm font-medium rounded-full border border-indigo-200">Wakil Ketua</span>
@@ -240,7 +297,7 @@
             <!-- Sekretaris -->
             <li onclick="bukaProfil('firoh')" class="bg-white px-6 py-4 rounded-xl shadow-sm border border-gray-100 flex flex-col sm:flex-row sm:items-center justify-between hover:border-brand-light transition-colors cursor-pointer hover:shadow-md group">
                 <div class="flex items-center mb-2 sm:mb-0">
-                    <img src="2.png" alt="Foto Siti Maghfiroh" onerror="this.onerror=null; this.src='https://placehold.co/400x400/db2777/ffffff?text=SM';" class="w-10 h-10 rounded-full object-cover mr-4 group-hover:scale-110 transition-transform shadow-sm">
+                    <img src="siti maghfiroh.png" alt="Foto Siti Maghfiroh" onerror="this.onerror=null; this.src='https://placehold.co/400x400/db2777/ffffff?text=SM';" class="w-10 h-10 rounded-full object-cover mr-4 group-hover:scale-110 transition-transform shadow-sm">
                     <span class="nama-anggota text-gray-800 font-semibold text-lg group-hover:text-pink-600 transition-colors">SITI MAGHFIROH</span>
                 </div>
                 <span class="peran-anggota px-3 py-1 bg-pink-50 text-pink-600 text-sm font-medium rounded-full border border-pink-200">Sekretaris</span>
@@ -249,7 +306,7 @@
             <!-- Bendahara 1 -->
             <li onclick="bukaProfil('iffa')" class="bg-white px-6 py-4 rounded-xl shadow-sm border border-gray-100 flex flex-col sm:flex-row sm:items-center justify-between hover:border-brand-light transition-colors cursor-pointer hover:shadow-md group">
                 <div class="flex items-center mb-2 sm:mb-0">
-                    <img src="3.png" alt="Foto Iffatul Qutsiyah" onerror="this.onerror=null; this.src='https://placehold.co/400x400/10b981/ffffff?text=IQ';" class="w-10 h-10 rounded-full object-cover mr-4 group-hover:scale-110 transition-transform shadow-sm">
+                    <img src="iffa.png" alt="Foto Iffatul Qutsiyah" onerror="this.onerror=null; this.src='https://placehold.co/400x400/10b981/ffffff?text=IQ';" class="w-10 h-10 rounded-full object-cover mr-4 group-hover:scale-110 transition-transform shadow-sm">
                     <span class="nama-anggota text-gray-800 font-semibold text-lg group-hover:text-emerald-600 transition-colors">IFFATUL QUTSIYAH</span>
                 </div>
                 <span class="peran-anggota px-3 py-1 bg-emerald-50 text-emerald-600 text-sm font-medium rounded-full border border-emerald-200">Bendahara</span>
@@ -258,7 +315,7 @@
             <!-- Bendahara 2 -->
             <li onclick="bukaProfil('aisyah')" class="bg-white px-6 py-4 rounded-xl shadow-sm border border-gray-100 flex flex-col sm:flex-row sm:items-center justify-between hover:border-brand-light transition-colors cursor-pointer hover:shadow-md group">
                 <div class="flex items-center mb-2 sm:mb-0">
-                    <img src="7.png" alt="Foto Aisyah Putri Primadini" onerror="this.onerror=null; this.src='https://placehold.co/400x400/10b981/ffffff?text=AP';" class="w-10 h-10 rounded-full object-cover mr-4 group-hover:scale-110 transition-transform shadow-sm">
+                    <img src="aisyah putri.png" alt="Foto Aisyah Putri Primadini" onerror="this.onerror=null; this.src='https://placehold.co/400x400/10b981/ffffff?text=AP';" class="w-10 h-10 rounded-full object-cover mr-4 group-hover:scale-110 transition-transform shadow-sm">
                     <span class="nama-anggota text-gray-800 font-semibold text-lg group-hover:text-emerald-600 transition-colors">AISYAH PUTRI PRIMADINI</span>
                 </div>
                 <span class="peran-anggota px-3 py-1 bg-emerald-50 text-emerald-600 text-sm font-medium rounded-full border border-emerald-200">Bendahara</span>
@@ -267,7 +324,7 @@
             <!-- Divisi PDD 1 -->
             <li onclick="bukaProfil('fara')" class="bg-white px-6 py-4 rounded-xl shadow-sm border border-gray-100 flex flex-col sm:flex-row sm:items-center justify-between hover:border-brand-light transition-colors cursor-pointer hover:shadow-md group">
                 <div class="flex items-center mb-2 sm:mb-0">
-                    <img src="5.png" alt="Foto Syabrina Faradilla" onerror="this.onerror=null; this.src='https://placehold.co/400x400/9333ea/ffffff?text=SF';" class="w-10 h-10 rounded-full object-cover mr-4 group-hover:scale-110 transition-transform shadow-sm">
+                    <img src="fara .png" alt="Foto Syabrina Faradilla" onerror="this.onerror=null; this.src='https://placehold.co/400x400/9333ea/ffffff?text=SF';" class="w-10 h-10 rounded-full object-cover mr-4 group-hover:scale-110 transition-transform shadow-sm">
                     <span class="nama-anggota text-gray-800 font-semibold text-lg group-hover:text-purple-600 transition-colors">SYABRINA FARADILLA</span>
                 </div>
                 <span class="peran-anggota px-3 py-1 bg-purple-50 text-purple-600 text-sm font-medium rounded-full border border-purple-200">Divisi PDD</span>
@@ -276,7 +333,7 @@
             <!-- Divisi PDD 2 -->
             <li onclick="bukaProfil('maya')" class="bg-white px-6 py-4 rounded-xl shadow-sm border border-gray-100 flex flex-col sm:flex-row sm:items-center justify-between hover:border-brand-light transition-colors cursor-pointer hover:shadow-md group">
                 <div class="flex items-center mb-2 sm:mb-0">
-                    <img src="1.png" alt="Foto Maya Aulia R" onerror="this.onerror=null; this.src='https://placehold.co/400x400/9333ea/ffffff?text=MA';" class="w-10 h-10 rounded-full object-cover mr-4 group-hover:scale-110 transition-transform shadow-sm">
+                    <img src="maya aulia.png" alt="Foto Maya Aulia R" onerror="this.onerror=null; this.src='https://placehold.co/400x400/9333ea/ffffff?text=MA';" class="w-10 h-10 rounded-full object-cover mr-4 group-hover:scale-110 transition-transform shadow-sm">
                     <span class="nama-anggota text-gray-800 font-semibold text-lg group-hover:text-purple-600 transition-colors">MAYA AULIA R</span>
                 </div>
                 <span class="peran-anggota px-3 py-1 bg-purple-50 text-purple-600 text-sm font-medium rounded-full border border-purple-200">Divisi PDD</span>
@@ -320,14 +377,14 @@
     </button>
 
     <!-- AI Chatbot Window -->
-<div id="ai-chat-window" class="fixed bottom-40 right-6 w-[350px] h-[450px] bg-white rounded-2xl shadow-2xl border border-gray-200 flex-col z-50 overflow-hidden font-sans transition-all duration-300 transform scale-95 opacity-0 pointer-events-none flex">
+<div id="ai-chat-window" class="fixed bottom-40 right-4 sm:right-6 w-[calc(100vw-2rem)] max-w-[350px] h-[min(450px,calc(100vh-12rem))] bg-white rounded-2xl shadow-2xl border border-gray-200 flex-col z-50 overflow-hidden font-sans transition-all duration-300 transform scale-95 opacity-0 pointer-events-none flex">
         <!-- Header -->
         <div class="bg-brand-dark text-white p-4 flex justify-between items-center shadow-md z-10">
             <div class="flex items-center gap-3">
                 <div class="w-8 h-8 rounded-full bg-brand-fuji flex items-center justify-center font-bold text-xs shadow-inner">AI</div>
                 <div>
                     <h3 class="font-bold text-sm">SocahBot AI</h3>
-                    <p class="text-xs text-blue-200">Asisten KKNT Trunodjoyo</p>
+                    <p class="text-xs text-blue-200">Asisten KKNT Trunojoyo</p>
                 </div>
             </div>
             <button id="ai-chat-close" class="text-white hover:text-brand-fuji focus:outline-none transition-colors">
@@ -358,7 +415,7 @@
 
         <!-- Input Area -->
         <div class="p-3 bg-white border-t border-gray-200 flex gap-2 items-center">
-        <input type="text" id="ai-chat-input" placeholder="Ketik pesan..." autocomplete="off" class="flex-1 border border-gray-300 rounded-full px-4 py-2 text-sm focus:outline-none focus:border-brand-fuji focus:ring-1 focus:ring-brand-fuji transition-colors">
+        <input type="text" id="ai-chat-input" maxlength="2000" placeholder="Ketik pesan..." autocomplete="off" class="flex-1 min-w-0 border border-gray-300 rounded-full px-4 py-2 text-sm focus:outline-none focus:border-brand-fuji focus:ring-1 focus:ring-brand-fuji transition-colors">
         <button id="ai-chat-send" class="bg-brand-fuji text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors focus:outline-none flex-shrink-0 shadow-md">
             <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
         </button>
@@ -380,7 +437,7 @@
         <div class="text-center mt-4">
             <!-- Foto Profil -->
             <div class="relative inline-block mb-4">
-                <img id="modal-foto" src="" alt="Foto Profil Anggota" class="w-28 h-28 rounded-full object-cover border-4 border-white shadow-[0_0_15px_rgba(0,0,0,0.1)] mx-auto">
+                <img id="modal-foto" alt="Foto Profil Anggota" title="Klik untuk memperbesar" onclick="openImageZoom(this.src, this.alt)" class="w-28 h-28 rounded-full object-cover border-4 border-white shadow-[0_0_15px_rgba(0,0,0,0.1)] mx-auto cursor-zoom-in">
                 <div class="absolute bottom-1 right-1 bg-brand-fuji w-6 h-6 rounded-full border-2 border-white flex items-center justify-center">
                     <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                 </div>
@@ -413,6 +470,16 @@
     </div>
 </div>
 
+<!-- Modal Zoom Gambar -->
+<div id="image-zoom-modal" class="fixed inset-0 z-[200] hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4">
+    <div class="relative max-w-4xl w-full">
+        <button onclick="closeImageZoom()" class="absolute -top-4 -right-4 bg-white text-gray-800 rounded-full w-10 h-10 shadow-lg hover:bg-gray-100 transition-colors focus:outline-none" aria-label="Tutup zoom gambar">
+            <svg class="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <img id="zoomed-image" alt="Hasil zoom foto" class="w-full max-h-[80vh] object-contain rounded-2xl shadow-2xl border border-white/20 bg-white/5">
+    </div>
+</div>
+
 <!-- Bagian Footer -->
 <footer class="bg-brand-dark text-gray-300 text-center py-8 border-t border-blue-900 pb-24 md:pb-8">
         <div class="max-w-6xl mx-auto px-4">
@@ -422,6 +489,56 @@
 
     <!-- Script JavaScript untuk Fitur Pencarian -->
 <script>
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuToggle?.addEventListener('click', () => {
+        const isOpen = mobileMenuToggle.getAttribute('aria-expanded') === 'true';
+        mobileMenuToggle.setAttribute('aria-expanded', String(!isOpen));
+        mobileMenuToggle.setAttribute('aria-label', isOpen ? 'Buka menu navigasi' : 'Tutup menu navigasi');
+        mobileMenu.classList.toggle('hidden', isOpen);
+    });
+
+    mobileMenu?.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            mobileMenuToggle.setAttribute('aria-expanded', 'false');
+            mobileMenuToggle.setAttribute('aria-label', 'Buka menu navigasi');
+        });
+    });
+
+    function openImageZoom(src, alt = 'Gambar anggota') {
+        const modal = document.getElementById('image-zoom-modal');
+        const img = document.getElementById('zoomed-image');
+
+        if (!modal || !img) return;
+
+        img.src = src;
+        img.alt = alt;
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+    }
+
+    function closeImageZoom() {
+        const modal = document.getElementById('image-zoom-modal');
+        if (!modal) return;
+
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeImageZoom();
+        }
+    });
+
+    document.getElementById('image-zoom-modal')?.addEventListener('click', function(event) {
+        if (event.target === this) {
+            closeImageZoom();
+        }
+    });
+
     // --- DATA BIODATA ANGGOTA ---
     const profilAnggota = {
         'pembina': { 
@@ -506,9 +623,15 @@
         // Isi data ke dalam HTML Modal
         const imgModal = document.getElementById('modal-foto');
         imgModal.src = data.foto;
+        imgModal.alt = data.nama;
+        imgModal.title = 'Klik untuk memperbesar';
+        imgModal.onclick = function() {
+            openImageZoom(this.src, this.alt);
+        };
         imgModal.onerror = function() {
             this.onerror = null;
             this.src = data.fallback;
+            this.alt = data.nama;
         };
         
         document.getElementById('modal-nama').innerText = data.nama;
@@ -565,6 +688,100 @@
         }, 300);
     }
 
+    // --- FILTER DAFTAR KEGIATAN ---
+    const panelKegiatan = document.getElementById('panel-kegiatan');
+    if (panelKegiatan) {
+        panelKegiatan.addEventListener('toggle', () => {
+            const summaryText = panelKegiatan.querySelector('summary span');
+            summaryText.textContent = panelKegiatan.open ? 'Tutup Daftar Kegiatan' : 'Lihat Daftar Kegiatan';
+        });
+    }
+
+    const filterKegiatanButtons = document.querySelectorAll('[data-kegiatan-filter]');
+    const barisKegiatan = document.querySelectorAll('[data-kegiatan-bulan]');
+
+    filterKegiatanButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+            const bulan = button.dataset.kegiatanFilter;
+
+            filterKegiatanButtons.forEach((item) => {
+                item.classList.remove('bg-brand-fuji', 'text-white', 'shadow-sm');
+                item.classList.add('bg-white', 'text-brand-dark', 'border', 'border-gray-200');
+            });
+
+            button.classList.remove('bg-white', 'text-brand-dark', 'border', 'border-gray-200');
+            button.classList.add('bg-brand-fuji', 'text-white', 'shadow-sm');
+
+            barisKegiatan.forEach((baris) => {
+                const tampil = bulan === 'semua' || baris.dataset.kegiatanBulan === bulan;
+                baris.classList.toggle('hidden', !tampil);
+            });
+        });
+    });
+
+    // --- SLIDER DOKUMENTASI KEGIATAN ---
+    const dokumentasiSlides = [
+        { src: 'image1.jpeg', text: 'Pembukaan dan koordinasi kegiatan KKNT-T Desa Socah bersama perangkat desa, dosen pembimbing lapangan, dan tim keamanan.' },
+        { src: 'image2.jpeg', text: 'Kegiatan koordinasi program kerja bersama kepala desa dan kepala sekolah.' },
+        { src: 'image3.jpeg', text: 'Peninjauan lokasi tambak, sumber air, dan area dock perahu untuk penyusunan buku desa.' },
+        { src: 'image4.jpeg', text: 'Pelatihan seni musik dan pengenalan notasi angka bersama siswa SDN Socah 4.' },
+        { src: 'image5.jpeg', text: 'Pelatihan seni musik dan pengenalan notasi angka bersama siswa SDN Socah 2.' },
+        { src: 'image6.jpeg', text: 'Kegiatan pembelajaran dan pendampingan siswa di lingkungan sekolah.' },
+        { src: 'image7.jpeg', text: 'Pembelajaran PAUD Mawar tentang mengenal buah dan kegiatan kolase.' },
+        { src: 'image8.jpg', text: 'Pendampingan pembelajaran PAUD Mawar tentang warna, doa, dan macam-macam pekerjaan.' },
+        { src: 'image9.jpg', text: 'Kegiatan praktik seni dan pembelajaran kreatif bersama siswa.' },
+        { src: 'image10.jpg', text: 'Latihan lagu dan penggunaan angklung dalam pelatihan seni musik sekolah.' },
+        { src: 'image11.jpg', text: 'Pendampingan siswa dalam pelatihan lagu berbasis notasi angka dan budaya Madura.' },
+        { src: 'image12.jpeg', text: 'Kegiatan kerja bakti dan penyerahan media tanam kangkung di Desa Socah.' },
+        { src: 'image13.jpg', text: 'Latihan serta penghafalan lagu Sewel Socah bersama siswa.' },
+        { src: 'image14.jpg', text: 'Kegiatan pembelajaran PAUD Mawar tentang profesi dan tugas sehari-hari.' },
+        { src: 'image15.jpg', text: 'Momen perpisahan dan kegiatan bersama anak PAUD Mawar.' },
+        { src: 'image16.jpeg', text: 'Penampilan siswa dalam penyetoran lagu budaya Madura.' },
+        { src: 'image17.jpeg', text: 'Pembuatan kerajinan berbasis clay sebagai salah satu kegiatan akhir KKNT.' },
+        { src: 'rapat-evaluasi-bulanan.jpeg', text: 'Rapat evaluasi bulanan KKNT pada 1 Oktober 2026.' }
+    ];
+
+    const dokumentasiFoto = document.getElementById('dokumentasi-foto');
+    const dokumentasiKeterangan = document.getElementById('dokumentasi-keterangan');
+    const dokumentasiIndikator = document.getElementById('dokumentasi-indikator');
+    let dokumentasiIndex = 0;
+    let dokumentasiTimer;
+
+    function tampilkanSlide(index) {
+        if (!dokumentasiFoto) return;
+        dokumentasiIndex = (index + dokumentasiSlides.length) % dokumentasiSlides.length;
+        const slide = dokumentasiSlides[dokumentasiIndex];
+        dokumentasiFoto.classList.add('opacity-0');
+
+        setTimeout(() => {
+            dokumentasiFoto.src = slide.src;
+            dokumentasiFoto.alt = slide.text;
+            dokumentasiKeterangan.textContent = slide.text;
+            dokumentasiIndikator.textContent = `Foto ${dokumentasiIndex + 1} dari ${dokumentasiSlides.length}`;
+            dokumentasiFoto.classList.remove('opacity-0');
+        }, 160);
+    }
+
+    function mulaiSliderOtomatis() {
+        clearInterval(dokumentasiTimer);
+        dokumentasiTimer = setInterval(() => tampilkanSlide(dokumentasiIndex + 1), 5000);
+    }
+
+    document.getElementById('dokumentasi-prev')?.addEventListener('click', () => {
+        tampilkanSlide(dokumentasiIndex - 1);
+        mulaiSliderOtomatis();
+    });
+    document.getElementById('dokumentasi-next')?.addEventListener('click', () => {
+        tampilkanSlide(dokumentasiIndex + 1);
+        mulaiSliderOtomatis();
+    });
+
+    if (dokumentasiFoto) {
+        dokumentasiFoto.className += ' transition-opacity duration-300';
+        tampilkanSlide(0);
+        mulaiSliderOtomatis();
+    }
+
     // --- LOGIKA PENCARIAN ANGGOTA ---
     function cariAnggota() {
             // Mengambil input dari kolom pencarian
@@ -604,7 +821,7 @@
             }
         }
 
-        // --- GEMINI AI CHATBOT LOGIC ---
+        // --- GROQ AI CHATBOT LOGIC ---
     const chatToggleBtn = document.getElementById('ai-chat-toggle');
     const chatWindow = document.getElementById('ai-chat-window');
         const chatCloseBtn = document.getElementById('ai-chat-close');
@@ -615,13 +832,7 @@
 
         let isChatOpen = false;
     let chatHistory = [];
-    // NOTE: API key removed from repository for security. Replace at runtime via
-    // an environment variable or a secure server-side proxy. Do NOT commit keys.
-    const apiKey = "REDACTED"; // set dynamically in production
-    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
-    
-    // System prompt DIPERBARUI dengan konteks pendidikan di Madura
-    const systemPrompt = "Kamu adalah 'Sakera Ai', asisten virtual pintar dan resmi untuk website kelompok KKNT (Kuliah Kerja Nyata Tematik) Universitas Trunodjoyo Madura di Desa Socah tahun 2026. Tugas utama kamu: 1. Menjawab tentang program kerja KKN (Pendidikan, Ekonomi, Kesehatan Lingkungan) dan anggota tim (Ketua: Adis, Wakil: Aufi, Sekretaris: Firoh, Bendahara: Iffa & Aisyah, PDD: Fara & Maya, Pembina: Ibu Firdausi). 2. Kamu memiliki wawasan luar biasa terkait SEGALA HAL TENTANG PENDIDIKAN DI MADURA. Jika ditanya mengenai sekolah, budaya literasi, peranan pesantren di Madura, Universitas Trunojoyo, hingga sejarah pendidikan Madura, jawablah dengan komprehensif, edukatif, dan menarik. Gunakan bahasa Indonesia yang ramah, sopan, namun tetap terstruktur dan informatif (maksimal 2 paragraf).";
+    const apiUrl = '/api/chat';
 
     // Toggle Chat UI
     chatToggleBtn.addEventListener('click', () => {
@@ -646,88 +857,71 @@
         function appendMessage(text, sender) {
             const msgDiv = document.createElement('div');
             msgDiv.className = `flex gap-2 ${sender === 'user' ? 'justify-end' : ''}`;
-            
-            // Render text safely while allowing basic line breaks (handling \n)
-            const formattedText = text.replace(/\n/g, '<br>');
 
-            if (sender === 'user') {
-                msgDiv.innerHTML = `
-                    <div class="bg-brand-fuji text-white p-3 rounded-2xl rounded-tr-none text-sm shadow-sm max-w-[85%] break-words">
-                        ${formattedText}
-                    </div>
-                `;
-            } else {
-                msgDiv.innerHTML = `
-                    <div class="w-6 h-6 rounded-full bg-brand-fuji flex-shrink-0 flex items-center justify-center text-white text-[10px] font-bold mt-1">AI</div>
-                    <div class="bg-white border border-gray-200 text-gray-800 p-3 rounded-2xl rounded-tl-none text-sm shadow-sm max-w-[85%] break-words">
-                        ${formattedText}
-                    </div>
-                `;
+            if (sender !== 'user') {
+                const avatar = document.createElement('div');
+                avatar.className = 'w-6 h-6 rounded-full bg-brand-fuji flex-shrink-0 flex items-center justify-center text-white text-[10px] font-bold mt-1';
+                avatar.textContent = 'AI';
+                msgDiv.appendChild(avatar);
             }
-            
+
+            const bubble = document.createElement('div');
+            bubble.className = sender === 'user'
+                ? 'bg-brand-fuji text-white p-3 rounded-2xl rounded-tr-none text-sm shadow-sm max-w-[85%] break-words'
+                : 'bg-white border border-gray-200 text-gray-800 p-3 rounded-2xl rounded-tl-none text-sm shadow-sm max-w-[85%] break-words';
+
+            text.split('\n').forEach((line, index) => {
+                if (index > 0) bubble.appendChild(document.createElement('br'));
+                bubble.appendChild(document.createTextNode(line));
+            });
+            msgDiv.appendChild(bubble);
+
             chatMessages.appendChild(msgDiv);
             chatMessages.scrollTop = chatMessages.scrollHeight;
         }
 
-        // Helper function for fetch with exponential backoff (for rate limiting)
-        async function fetchWithRetry(url, options, maxRetries = 3) {
-            let delay = 1000;
-            for (let i = 0; i < maxRetries; i++) {
-                try {
-                    const response = await fetch(url, options);
-                    if (!response.ok && response.status === 429) throw new Error("Rate limit exceeded");
-                    return response;
-                } catch (error) {
-                    if (i === maxRetries - 1) throw error;
-                    await new Promise(res => setTimeout(res, delay));
-                    delay *= 2; // Exponential backoff (1s, 2s, 4s...)
-                }
-            }
-        }
-
-        // Call Gemini API to get response
-        async function fetchGeminiResponse(userText) {
+        async function fetchGroqResponse(userText) {
             loadingIndicator.classList.remove('hidden');
             chatMessages.scrollTop = chatMessages.scrollHeight;
 
-            // Map chat history for the API payload
-            const contents = chatHistory.map(msg => ({
-                role: msg.role,
-                parts: [{ text: msg.text }]
-            }));
-            
-            // Add current message
-            contents.push({ role: "user", parts: [{ text: userText }] });
-
-            const payload = {
-                contents: contents,
-                systemInstruction: { parts: [{ text: systemPrompt }] }
-            };
-
             try {
-                const response = await fetchWithRetry(apiUrl, {
+                const response = await fetch(apiUrl, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
+                    body: JSON.stringify({
+                        message: userText,
+                        history: chatHistory.slice(-10)
+                    })
                 });
-                
-                const result = await response.json();
-                loadingIndicator.classList.add('hidden');
 
-                if (result.candidates && result.candidates.length > 0 && result.candidates[0].content) {
-                    const aiText = result.candidates[0].content.parts[0].text;
-                    
-                    // Save to history
-                    chatHistory.push({ role: "user", text: userText });
-                    chatHistory.push({ role: "model", text: aiText });
-                    
-                    appendMessage(aiText, 'model');
-                } else {
-                    appendMessage("Maaf, saya tidak mengerti atau terjadi kesalahan format. Bisa ulangi?", 'model');
+                const responseText = await response.text();
+                let result;
+                try {
+                    result = JSON.parse(responseText);
+                } catch {
+                    if (responseText.trimStart().startsWith('<')) {
+                        throw new Error('Server AI mengembalikan halaman HTML. Jalankan website melalui backend Express di http://localhost:3000, bukan Live Server atau file://.');
+                    }
+                    throw new Error('Server AI mengembalikan respons yang tidak dapat dibaca.');
                 }
+
+                if (!response.ok) {
+                    throw new Error(result.error || `Permintaan AI gagal (HTTP ${response.status}).`);
+                }
+
+                const aiText = result.reply;
+                if (typeof aiText !== 'string' || !aiText.trim()) {
+                    throw new Error('AI tidak mengembalikan jawaban yang valid.');
+                }
+
+                chatHistory.push({ role: 'user', text: userText });
+                chatHistory.push({ role: 'assistant', text: aiText });
+                chatHistory = chatHistory.slice(-10);
+                appendMessage(aiText, 'assistant');
             } catch (error) {
+                appendMessage(error.message || 'Koneksi AI sedang bermasalah. Coba lagi sebentar ya.', 'assistant');
+            } finally {
                 loadingIndicator.classList.add('hidden');
-                appendMessage("Aduh, sepertinya koneksi sedang gangguan. Coba sebentar lagi ya!", 'model');
             }
         }
 
@@ -738,7 +932,7 @@
             
             appendMessage(text, 'user');
             chatInput.value = '';
-            fetchGeminiResponse(text);
+            fetchGroqResponse(text);
         }
 
         chatSendBtn.addEventListener('click', handleSend);

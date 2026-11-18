@@ -12,6 +12,10 @@ yarn-error.log*
 
 # Environment
 .env
+.env.*
+*.env
+*.env.*
+!.env.example
 
 # VS Code
 .vscode/
@@ -23,3 +27,6 @@ build/
 # Temporary files
 *.tmp
 ~$*
+
+# Local source report is not needed by the public website
+Laporan Kegitan KKNT.docx
